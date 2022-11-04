@@ -1,0 +1,55 @@
+body {
+    background-color: #1ee127;
+}
+
+
+body::before {
+    display: block;
+    content: "";
+    height: 60px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media(min-width:768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+.heading {
+    background-color: #1ee127;
+}
+.Mower {
+    max-width: 25%;
+}
+.navbar {
+    background-color: #1a9c1e;
+}
+.grass {
+    align-items: left;
+    min-width: 5%;
+}
+#instructors {
+    background-color: #1a9c1e;
+
+}
+.card-body {
+    min-height:250px;
+}
+#map {
+    min-height: 300px;
+}
+#work {
+    align-items: center;
+    align-self: center;
+}
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).html()).select();
+    document.execCommand("copy");
+    $temp.remove();
+   }
